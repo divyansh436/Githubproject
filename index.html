@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repositories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <div id="userDetails">
+            <div id="userInfo">
+                <img id="avatar" src="" alt="GitHub Avatar">
+            </div>
+            <div id="userSubDetails">
+                <h1 id="userName"></h1>
+                <div id="socialLinks"></div>
+                <p id="bio"></p>
+            </div>
+        </div>
+
+    <form id="githubForm">
+        <label for="username">GitHub Username:</label>
+        <input type="text" id="username" required>
+        <button type="button" onclick="fetchRepos()">Fetch Repositories</button>
+    </form>
+
+    <div id="repoContainer" class="repo-container"></div>
+
+    <div id="pagination"></div>
+
+    <div id="pageButtons" class="pagination">
+        <button id="previousPageBtn" onclick="previousPage()">Previous Page</button>
+        <button id="nextPageBtn" onclick="nextPage()">Next Page</button>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+</body>
+</html>
+
+
